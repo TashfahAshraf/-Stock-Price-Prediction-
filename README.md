@@ -1,11 +1,11 @@
-###📈 Stock Price Prediction###
+#📈 Stock Price Prediction
 
-###📌 Author ###
+##📌 Author 
 
 👩‍💻 Tashfah Ashraf
 Intern  – ARCH TECHNOLOGIES
 
-###📌 Task Overview###
+#📌 Task Overview
 
 This project was developed as part of my internship.
 The task was to predict future stock prices based on historical stock data using machine learning and deep learning techniques.
@@ -20,9 +20,9 @@ We were provided with a dataset containing features such as:
 
 The objective was to build models that can learn from this historical data and predict the next-day closing price.
 
-###🔧 Steps Performed###
+###🔧 Steps Performed
 
-###1. Data Preprocessing###
+###1. Data Preprocessing
 
 -Loaded stock price dataset (from Kaggle).
 -Converted Date to datetime format and sorted chronologically.
@@ -31,7 +31,7 @@ The objective was to build models that can learn from this historical data and p
 -Created Target column (Close_t+1) = next day’s closing price.
 -Train-test split (80% train, 20% test) using time-based split.
 
-###2. Baseline Model: Linear Regression###
+###2. Baseline Model: Linear Regression
 
 -Used features Open, High, Low, Close, Volume.
 -Predicted Close_t+1.
@@ -41,7 +41,7 @@ The objective was to build models that can learn from this historical data and p
 -R² Score
 -Visualized Actual vs Predicted Prices.
 
-###3. Advanced Model: LSTM (Long Short-Term Memory)###
+###3. Advanced Model: LSTM (Long Short-Term Memory)
 
 -Scaled features with MinMaxScaler.
 -Created time sequences (lookback = 60 days).
@@ -54,22 +54,22 @@ The objective was to build models that can learn from this historical data and p
 -Evaluated with MAE, RMSE, R².
 -Visualized Actual vs Predicted Prices (LSTM).
 
-###4. Naïve Baseline###
+###4. Naïve Baseline
 
 -Predicted tomorrow’s Close = today’s Close.
 -Served as a benchmark to compare ML/DL models.
 
-###5. Model Comparison###
+###5. Model Comparison
 
 <img width="547" height="152" alt="image" src="https://github.com/user-attachments/assets/3a282f52-2941-4a39-a7b6-14a37a5ebce0" />
 
-###📊 Results & Conclusion ###
+###📊 Results & Conclusion 
 
 -Linear Regression performed better than the naive baseline, showing ML can capture basic trends.
 -LSTM outperformed Linear Regression, achieving the lowest errors, because it captures temporal dependencies in stock data.
 -This demonstrates that deep learning (LSTM) is more suitable for stock price forecasting tasks compared to simple regression.
 
-###🛠 Tech Stack ###
+###🛠 Tech Stack 
 
 -Python 3
 -Pandas, NumPy – data preprocessing
@@ -77,15 +77,15 @@ The objective was to build models that can learn from this historical data and p
 -Scikit-learn – Linear Regression, metrics, scaling
 -TensorFlow / Keras – LSTM model
 
-###🚀 How to Run###
+##🚀 How to Run
 
-###Clone this repo:###
+###Clone this repo:
 
 git clone <your-repo-link>
 cd stock-price-prediction
 
 
-###Install required libraries:###
+###Install required libraries:
 
 pip install -r requirements.txt
 Run the Jupyter Notebook:
